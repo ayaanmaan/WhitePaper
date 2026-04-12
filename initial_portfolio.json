@@ -1,0 +1,9 @@
+{
+  "portfolio_id": "team_SAMPLE",
+  "cash": 10000000.0,
+  "holdings": [],
+  "seed": 42,
+  "session_start_tick": 0,
+  "currency": "USD",
+  "note": "Replace portfolio_id with your assigned team ID on event day."
+}

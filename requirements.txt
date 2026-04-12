@@ -1,0 +1,7 @@
+# Hackathon@IITD 2026 — dependencies
+websockets>=12.0
+httpx>=0.27.0
+numpy>=1.26.0
+pandas>=2.2.0
+cvxpy>=1.5.0
+python-dateutil>=2.9.0

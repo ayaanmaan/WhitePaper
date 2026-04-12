@@ -1,0 +1,133 @@
+[
+  {
+    "id": "CA004",
+    "type": "STOCK_SPLIT",
+    "ticker": "D002",
+    "tick": 0,
+    "split_ratio": 3,
+    "pre_split_price": 263.51,
+    "post_split_price": 87.84,
+    "price_impact_pct": -66.7,
+    "description": "3-for-1 stock split effective at market open. Price divided by 3, shares multiplied by 3. DO NOT treat as a price crash.",
+    "expected_behaviour": "Adjust qty/weights for split; do NOT panic sell D002",
+    "in_sample": true
+  },
+  {
+    "id": "CA008",
+    "type": "EARNINGS_SURPRISE",
+    "ticker": "C002",
+    "tick": 22,
+    "surprise_pct": 6.2,
+    "price_impact_pct": 6.2,
+    "vol_multiplier": 3.8,
+    "description": "Healthcare sector earnings beat +6.2% vs consensus. Analyst upgrades expected. Strong momentum signal.",
+    "expected_behaviour": "BUY C002 within 5 ticks of tick 22; momentum signal",
+    "in_sample": true
+  },
+  {
+    "id": "CA002",
+    "type": "DIVIDEND_DECLARATION",
+    "ticker": "B003",
+    "tick": 45,
+    "dividend_per_share": 1.2,
+    "price_impact_pct": 2.1,
+    "vol_multiplier": 2.8,
+    "description": "Special cash dividend of $1.20/share declared. Must BUY before ex-date to receive dividend.",
+    "expected_behaviour": "BUY B003 before tick 45; factor $1.20/share yield into expected return",
+    "in_sample": true
+  },
+  {
+    "id": "CA009",
+    "type": "DIVIDEND_DECLARATION",
+    "ticker": "D007",
+    "tick": 67,
+    "dividend_per_share": 0.85,
+    "price_impact_pct": 1.8,
+    "vol_multiplier": 2.1,
+    "description": "Special cash dividend of $0.85/share declared by D007 (Energy sector). Must BUY before ex-date to receive dividend.",
+    "expected_behaviour": "BUY D007 before tick 67; factor $0.85/share yield into expected return",
+    "in_sample": true
+  },
+  {
+    "id": "CA001",
+    "type": "EARNINGS_SURPRISE",
+    "ticker": "A001",
+    "tick": 90,
+    "surprise_pct": 18.0,
+    "price_impact_pct": 8.5,
+    "vol_multiplier": 5.2,
+    "description": "Significant earnings beat +18% vs consensus. Analyst upgrade to Buy. Strong momentum signal.",
+    "expected_behaviour": "BUY A001 within 5 ticks of tick 90; strong momentum signal",
+    "in_sample": true
+  },
+  {
+    "id": "CA003",
+    "type": "MANAGEMENT_CHANGE",
+    "ticker": "C005",
+    "tick": 150,
+    "price_impact_pct": -6.3,
+    "vol_multiplier": 4.1,
+    "description": "CEO resignation announced. High governance uncertainty. Negative price impact with elevated volatility. ESG governance flag.",
+    "expected_behaviour": "REDUCE or EXIT C005 within 10 ticks of tick 150",
+    "in_sample": true
+  },
+  {
+    "id": "CA005",
+    "type": "MA_RUMOUR",
+    "ticker": "E007",
+    "tick": 200,
+    "confirmed": false,
+    "price_impact_pct": 14.2,
+    "vol_multiplier": 7.8,
+    "description": "Unconfirmed acquisition rumour. Significant price spike expected. Turnover constraint limits how aggressively you can position.",
+    "expected_behaviour": "Size E007 to 0-5% of portfolio after tick 200; do not overweight",
+    "in_sample": true
+  },
+  {
+    "id": "CA010",
+    "type": "MANAGEMENT_CHANGE",
+    "ticker": "E004",
+    "tick": 240,
+    "price_impact_pct": -4.7,
+    "vol_multiplier": 3.2,
+    "description": "CFO resignation announced at E004 (Consumer Goods). Governance uncertainty. ESG governance flag.",
+    "expected_behaviour": "REDUCE or EXIT E004 within 10 ticks of tick 240",
+    "in_sample": true
+  },
+  {
+    "id": "CA006",
+    "type": "REGULATORY_FINE",
+    "ticker": "B008",
+    "tick": 280,
+    "fine_amount_usd": 340000000,
+    "price_impact_pct": -9.1,
+    "vol_multiplier": 6.3,
+    "description": "Regulatory fine of $340M imposed on B008 (Finance sector). Significant ESG compliance violation. Major negative price impact.",
+    "expected_behaviour": "EXIT or REDUCE B008 within 10 ticks of tick 280",
+    "in_sample": true
+  },
+  {
+    "id": "CA011",
+    "type": "REGULATORY_FINE",
+    "ticker": "A009",
+    "tick": 325,
+    "fine_amount_usd": 210000000,
+    "price_impact_pct": -5.5,
+    "vol_multiplier": 4.4,
+    "description": "Regulatory fine of $210M imposed on A009 (Technology) for data privacy violations. ESG governance breach.",
+    "expected_behaviour": "EXIT or REDUCE A009 within 10 ticks of tick 325",
+    "in_sample": true
+  },
+  {
+    "id": "CA007",
+    "type": "INDEX_REBALANCE",
+    "ticker": "A005,B001",
+    "tick": 370,
+    "price_impact_pct_a005": 1.8,
+    "price_impact_pct_b001": 1.5,
+    "vol_multiplier": 2.2,
+    "description": "Both A005 and B001 added to a major index. Demand surge expected at rebalance tick. Pre-positioning before tick 370 earns bonus scoring (TC007).",
+    "expected_behaviour": "Pre-position in A005 and B001 before tick 370 for bonus alpha",
+    "in_sample": true
+  }
+]

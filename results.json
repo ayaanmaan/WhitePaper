@@ -1,0 +1,15 @@
+{
+  "starting_value": 10000000.0,
+  "final_value": 10305163.76,
+  "pnl": 305163.76,
+  "pnl_pct": 3.0516,
+  "sharpe_ratio": 0.114893,
+  "turnover_ratio": 0.2948,
+  "total_ticks": 390,
+  "total_orders": 56,
+  "llm_calls_used": 0,
+  "llm_quota": 60,
+  "tc004_compliant": true,
+  "tc005_compliant": true,
+  "generated_at": "2026-04-12T08:39:58.596122+00:00"
+}
