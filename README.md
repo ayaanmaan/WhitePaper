@@ -31,14 +31,14 @@ An autonomous trading agent that manages a $10M simulated portfolio across 50 ti
 
 | TC | Description | Result |
 |---|---|---|
-| TC001 | Stock split — D002 3:1 at tick 0 | ✅ PASS |
-| TC002 | Earnings surprise — A001 +18% at tick 90 | ❌ FAIL |
-| TC003 | Regulatory fine — B008 $340M at tick 280 | ✅ PASS |
-| TC004 | Cardinality ≤ 30 maintained throughout | ✅ PASS |
-| TC005 | Turnover ≤ 30% (achieved 29.48%) | ✅ PASS |
-| TC006 | M&A rumour — E007 capped 0–5% from tick 200 | ✅ PASS |
-| TC007 | BONUS: Index rebalance pre-positioning A005/B001 | ✅ PASS |
-| TC008 | LLM budget: 0/60 calls used | ✅ PASS |
+| TC001 | Stock split — D002 3:1 at tick 0 | PASS |
+| TC002 | Earnings surprise — A001 +18% at tick 90 | FAIL |
+| TC003 | Regulatory fine — B008 $340M at tick 280 | PASS |
+| TC004 | Cardinality ≤ 30 maintained throughout | PASS |
+| TC005 | Turnover ≤ 30% (achieved 29.48%) | PASS |
+| TC006 | M&A rumour — E007 capped 0–5% from tick 200 | PASS |
+| TC007 | BONUS: Index rebalance pre-positioning A005/B001 | PASS |
+| TC008 | LLM budget: 0/60 calls used | PASS |
 
 ---
 
@@ -198,7 +198,7 @@ python validate_solution.py
 | `market_feed_full.json` | Full 390-tick price/volume feed for all 50 tickers |
 | `corporate_actions.json` | All 11 CA events with ticker, tick, and event parameters |
 | `initial_portfolio.json` | Starting portfolio state ($10M cash) |
-| `validate_solution.py` | Official grader — reproduces the 66.3/100 score |
+| `validate_solution.py` | Official grader, reproduces the 66.3/100 score |
 | `orders_log.json` | All 56 orders executed during the run |
 | `portfolio_snapshots.json` | Per-tick portfolio state across all 390 ticks |
 | `result_output.json` | Final scored output with TC pass/fail breakdown |
